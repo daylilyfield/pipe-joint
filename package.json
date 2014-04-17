@@ -4,7 +4,7 @@
   "description": "you can pipe streams with a bit better notation to read.",
   "homepage": "https://github.com/daylilyfield/pipe-joint",
   "bugs": "https://github.com/daylilyfield/pipe-joint/issues",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/daylilyfield/pipe-joint.git"
   },
