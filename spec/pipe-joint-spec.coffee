@@ -86,3 +86,6 @@ describe 'pipe-joint', ->
     ]
 
     third.on 'end', -> expect(third.total).toBe 55
+
+  it 'should throw error since argument is not stream', ->
+    expect(-> proceed -> pipe [{}]).toThrow()
