@@ -17,7 +17,9 @@ when we use streams, for example with [gulp](http://gulpjs.com/), we usually
 write a build script like below.
 
 ```coffeescript
-{src, dest} = require 'gulp'
+gulp = require 'gulp'
+task = gulp.task.bind gulp
+{src, dest, watch} = gulp
 
 task 'script', ->
   src('lib/*.js')
@@ -32,7 +34,9 @@ pipe, pipe, pipe... i get tired of typing too much ``pipe``. by using
 pipe-joint, you can write your build script like below.
 
 ```coffeescript
-{src, dest} = require 'gulp'
+gulp = require 'gulp'
+task = gulp.task.bind gulp
+{src, dest, watch} = gulp
 
 task 'script', -> pipe [
   src 'lib/*.js'
@@ -47,8 +51,9 @@ task 'script', -> pipe [
 or, you can specify not only stream but factory which make stream.
 
 ```coffeescript
-{src, dest} = require 'gulp'
-pipe = require 'pipe-joint'
+gulp = require 'gulp'
+task = gulp.task.bind gulp
+{src, dest, watch} = gulp
 
 task 'script', -> pipe [
   -> src 'lib/*.js'
