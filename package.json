@@ -1,0 +1,16 @@
+{
+  "name": "pipe-joint",
+  "version": "0.1.0",
+  "description": "you can pipe streams with a bit better notation to read.",
+  "main": "lib/pipe-joint.coffee",
+  "scripts": {
+    "test": "jasmine-node --coffee ."
+  },
+  "keywords": [
+    "stream",
+    "pipe",
+    "coffeescript"
+  ],
+  "author": "daylilyfield",
+  "license": "MIT"
+}
