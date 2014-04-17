@@ -48,7 +48,7 @@ task 'script', -> pipe [
 ]
 ```
 
-or, you can specify not only stream but factory which make stream.
+or, you can specify not only streams but factories which make stream.
 
 ```coffeescript
 gulp = require 'gulp'
@@ -65,7 +65,7 @@ task 'script', -> pipe [
 ]
 ```
 
-you can mix streams and factories in single pipe-joint.
+you can mix both streams and factories in single pipe-joint array.
 
 API
 ---
