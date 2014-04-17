@@ -1,6 +1,6 @@
 {
   "name": "pipe-joint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "you can pipe streams with a bit better notation to read.",
   "homepage": "https://github.com/daylilyfield/pipe-joint",
   "bugs": "https://github.com/daylilyfield/pipe-joint/issues",

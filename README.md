@@ -38,6 +38,8 @@ gulp = require 'gulp'
 task = gulp.task.bind gulp
 {src, dest, watch} = gulp
 
+pipe = require 'pipe-joint'
+
 task 'script', -> pipe [
   src 'lib/*.js'
   concat 'index.js'
@@ -54,6 +56,8 @@ or, you can specify not only streams but factories which make stream.
 gulp = require 'gulp'
 task = gulp.task.bind gulp
 {src, dest, watch} = gulp
+
+pipe = require 'pipe-joint'
 
 task 'script', -> pipe [
   -> src 'lib/*.js'
@@ -72,7 +76,7 @@ API
 
 ``pipe(streamsOrStreamFactories)``
 
-- streamsOrStreamFactories: Array<stream.Stream|Function>
+- streamsOrStreamFactories: Array[stream.Stream|Function]
 
   streams or stream factories which are chained by specified order.
 
